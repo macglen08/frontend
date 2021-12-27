@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Assignment-1.4</title>
+</head>
+<body>
+<div>
+      
+     <input type="text" name="a" id="inputNo" placeholder="Enter a number"/> </td>
+     <br><br>
+     <button onclick="sum()">Submit</button></td>
+     <br><br>
+     <div id="sum"></div>
+
+     <script>
+        function sum(){
+        var n;
+        var noOfHeads=0;
+        n = document.getElementById ("inputNo").value;
+            if(n==1){
+                noOfHeads = 1/2;
+            }else{
+                for(i=0;i<n;i++){
+                //the Math.floor((Math.random() * 2) + 1) will return random 1 or 2
+                //so lets consider 1 as head
+                    if(Math.floor((Math.random() * 2) + 1) == 1){
+                        noOfHeads++;
+                    }
+                }
+             noOfHeads = noOfHeads/n;
+            }
+        document.getElementById ("sum").innerHTML = noOfHeads ;
+        }
+     </script>
+</div>
+</body>
+</html> 
+ 

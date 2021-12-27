@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+
+
+table th,tr,td {
+  border: 2px solid #008000;
+  background-color: white;
+}
+
+
+

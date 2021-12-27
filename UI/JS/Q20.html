@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Order Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Q20.css">	
+</head>
+<body>
+<div class="container">
+	<h1>Pizza Order Menu</h1>
+	<br>
+	Name: <input type="text" name="firstname" placeholder="Enter name"><br/>
+    Email: <input type="text" name="lastname" placeholder="Enter email"><br/>
+	<div id="toppings">
+		<h3 class="tablehead">Toppings:</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="Extra Cheese" value="Extra Cheese"> Extra Cheese
+			<input type="checkbox" name="Pepperoni" value="Pepperoni"> Pepperoni
+			<input type="checkbox" name="Olives" value="Olives"> Olives
+			<input type="checkbox" name="Pepper" value="Pepper"> Pepper
+			<input type="checkbox" name="Mushrooms" value="Mushrooms"> Mushrooms<br>
+			<input type="checkbox" name="Bacon" value="Bacon"> Bacon
+			<input type="checkbox" name="Tomatoes" value="Tomatoes"> Tomatoes
+		</div>
+	</div>
+    <br>
+    <div id="delivery">
+		<h3 class="tablehead">How do you want to get your pizza?</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="Delivery" value="Delivery"> Delivery
+			<input type="radio" name="Pickup" value="Pickup"> Pickup
+		</div>
+	</div>
+    <br>
+    <p>Address:</br></p>
+	  <textarea></textarea>
+	  <p></p>
+	<br>
+	<br>
+	<button id="button1" type="submit" onclick="button1">Submit</button>
+	<button id="button2" type="reset" onclick="button2">Reset</button>
+    <button id="button3" type="reset" onclick="button3">Show Summary</button>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="Q2.css">
+</head>
+<body >
+    <h1>Registration Form</h1>
+  <form>
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+    </div>
+    <br>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+    </div>
+    <br>
+    <div class="form-group">
+      <p>Which event are you registering for?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option value="march" >15th March</option>
+        <option value="may">27th May</option>
+        <option value="august">12th August</option>
+      </select>
+    </div>
+	<br>
+	<br>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+	<br><br>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

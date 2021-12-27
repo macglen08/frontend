@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+p.a {border-style: solid;
+	border-width: 7px;
+	background-color:#99FFFF;}
+p.b {border-style: solid;
+	border-width: 5px;
+	background-color:#99FFFF;}
+p.c {border-style: solid;
+	border-width: 2px;
+	background-color:#99FFFF;}

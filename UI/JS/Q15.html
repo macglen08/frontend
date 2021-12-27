@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Assignment-1.15</title>
+</head>
+<body>
+<div>
+     <script>
+        array=[1,9,2,8,7,10,4,6,3,5];
+        //Bubble Sorting
+        document.write("Before Bubble Sorting:"+array);
+        document.write("<br>");
+        {
+            var checked;
+            do {
+                checked = false;
+                for (let i = 0; i < array.length; i++) 
+                {
+                    if (array[i] > array[i + 1]) 
+                    {
+                        var tmp = array[i];
+                        array[i] = array[i + 1];
+                        array[i + 1] = tmp;
+                        checked = true;
+                    }
+                }
+            } while (checked);
+            document.write("After Bubble Sorting:"+array);
+        }
+
+        //Merge Sorting
+        const merge = (arr1, arr2) => 
+        {
+            var sorted = [];
+
+            while (arr1.length && arr2.length) 
+            {
+                if (arr1[0] < arr2[0]) sorted.push(arr1.shift());
+                else sorted.push(arr2.shift());
+            };
+
+        return sorted.concat(arr1.slice().concat(arr2.slice()));
+        };
+        document.write("<br>"+"Array:"+merge([1,9,2,8,7,10], [4,6,3,5]));
+        
+     </script>
+</div>
+</body>
+</html> 

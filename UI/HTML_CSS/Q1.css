@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+div.header
+{
+	text-align:center;
+}
+div.sub header
+{
+	text-align:justify;
+}
+img
+{
+		
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+table
+{
+
+  	border: 2px solid black;
+  	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+td,tr
+{
+	text-align:center;
+	border: 1px solid black;
+}

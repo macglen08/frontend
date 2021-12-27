@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Assignment-1.18</title>
+</head>
+<body>
+<div>
+     <script>
+
+// js program to encode a word to a
+// Pig Latin.
+
+	
+function isVowel(c)
+{
+	return (c == 'A' || c == 'E' ||
+			c == 'I' || c == 'O' ||
+			c == 'U' || c == 'a' ||
+			c == 'e' || c == 'i' ||
+			c == 'o' || c == 'u');
+}
+
+function pigLatin(s)
+{
+
+	// the index of the first
+	// vowel is stored.
+	index = -1
+	for (let i = 0; i < s.length ; i++)
+	{
+		if (isVowel(s[i]))
+		{
+			index = i;
+			break;
+		}
+	}
+
+	// Pig Latin is possible only
+	// if vowels is present
+	if (index == -1)
+		return "-1";
+
+	// Take all characters after
+	// index (including index).
+	// Append all characters which
+	// are before index. Finally
+	// append "ay"
+	return s.substring(index) +
+		s.substring(0, index)
+						+ "ay";
+}
+
+// Driver code
+
+str = pigLatin("The quick brown  fox");
+
+if (str == "-1")
+	document.write("No vowels"
+			+ "found. Pig Latin"
+			+ " not possible");
+else
+	document.write(str);
+
+
+     </script>
+</div>
+</body>
+</html>

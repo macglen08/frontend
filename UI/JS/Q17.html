@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Javascript Assignment-1.17</title>
+</head>
+
+<body style="text-align:center;">
+
+	<p id="GFG_UP"></p>
+
+	<button onclick="myGFG()">
+		Click Here
+	</button>
+	
+	<p id="GFG_DOWN"></p>
+
+	<script>
+		var array = [1,2,3,4,5];
+		var up = document.getElementById("GFG_UP");
+
+		up.innerHTML = "Array Rotattion<br>Array - ["
+					+ array + "]";
+
+		var down = document.getElementById("GFG_DOWN");
+
+		function arrayRotate(arr) {
+			arr.unshift(arr.pop());
+			return arr;
+		}
+		
+		function myGFG() {
+			array = arrayRotate(array);
+			down.innerHTML = "elements of array = ["
+							+ array + "]";
+		}
+	</script>
+</body>
+
+</html>
